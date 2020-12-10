@@ -9,11 +9,11 @@ from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
 
-url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
+id = input("What Crypto ID do you want data on? ")
+
+url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 parameters = {
-  'start':'1',
-  'limit':'5000',
-  'convert':'USD'
+  'id':str(id)
 }
 headers = {
   'Accepts': 'application/json',
@@ -29,3 +29,4 @@ try:
   print(data)
 except (ConnectionError, Timeout, TooManyRedirects) as e:
   print(e)
+
