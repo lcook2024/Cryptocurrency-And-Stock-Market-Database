@@ -8,8 +8,15 @@ Cryptocurrency Applications
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
+import os
 
-print("Some popular Cryptocurrencies and their tickers are: \n Bitcoin, BTC \n Ethereum, ETH \n Dogecoin, DOGE \n")
+if __name__ == "__main__":
+  os.system("clear")
+
+print("Hello, and welcome to your friendly neighborhood Cyrptocurrency database! \nThis data base can provide you information on thousands of cryptos. \nIt'll display you the information in a format you're not used to, but it's simple! \nThe name of the infomation is on the left, and the value is on the right. \nI hope you can find this useful!\n")
+
+print("Some popular Cryptocurrencies and their tickers are: \n Bitcoin, BTC \n Ethereum, ETH \n Dogecoin, DOGE \n Monero, XMR \n Ripple, XRP \n Litecoin, LTC \n Bitcoin Cash, BCH \n ")
+
 id = input("What Crypto do you want data on (Please input ticker)? ")
 
 url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
