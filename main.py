@@ -3,9 +3,9 @@ Author: Logan Cook
 
 Cryptocurrency Databases
 
-Utilizes the CoinMarketCap API, along with imports from requests, json, and os. 
+Utilizes the CoinMarketCap API, along with imports from requests, json, and os, pandas data reader. PDR pulls from Yahoo finance.
 
-The goal of the code is to provide the user an easy and effecient way to be provided will all of the data they need on their favorite cryptos. 
+The goal of the code is to provide the user an easy and effecient way to be provided will all of the data they need on their favorite cryptos and stocks. 
 
 """
 import pandas_datareader
@@ -16,6 +16,11 @@ import json
 import os
 
 def stock():
+  """
+  This functions utilizes the Pandas Data Reader to pull stock data from Yahoo finance 
+  
+  No parameters or returns.
+  """
   print("Hello, and welcome to your friendly neighborhood stock market database! \nThis data base can provide you information on thousands of stocks. \nIt'll display you data from 5 years ago, and current day. \nThe name of the data is on top and it's value is below! \nThe date the data is from is displayed on the left. \nI hope you can find this useful!\n")
   print("Some popular stocks and their tickers: \n Amazon, AMZN \n Apple, APPL \n Coca-Cola, KO \n Tesla, TSLA \nRemember you can put in any stock ticker! \n")
   ticker = input("What stock would you like data on (Please input ticker)? ")
@@ -23,7 +28,11 @@ def stock():
   print(str(data))
 
 def crypto():
-
+  """
+  This functions utilizes the Coin Market Cap API to provide the user with crytpocurrency data based off their user input
+  
+  No parameters or returns.
+  """
   print("Hello, and welcome to your friendly neighborhood Cyrptocurrency database! \nThis data base can provide you information on thousands of cryptos. \nIt'll display you the information in a format you're not used to, but it's simple! \nThe name of the infomation is on the left, and the value is on the right. \nI hope you can find this useful!\n")
 
   print("Some popular Cryptocurrencies and their tickers are: \n Bitcoin, BTC \n Ethereum, ETH \n Dogecoin, DOGE \n Monero, XMR \n Ripple, XRP \n Litecoin, LTC \n Bitcoin Cash, BCH \n ")
@@ -52,12 +61,13 @@ def crypto():
 
   print("\nPlease note that the console will clear when you run the program again!")
 
-
+#Below clears the terminal each time the code runs
 if __name__ == "__main__":
   os.system("clear")
 
 choice = input("What would you like data on, stocks or Cyrptocurrency? ")
 
+#Uses the choice variable 
 if choice == "Stocks" or choice == "stocks" or choice == "Stock market" or choice == "stock market" or choice == "Stock Market" or choice == "Stock" or choice == "stock":
   print("\n")
   stock()
