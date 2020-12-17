@@ -4,7 +4,7 @@ This project is an easy to use database that can provide data on thousands of st
 
 ## Description
 
-This code pulls data from Yahoo Finance and Coin Market Cap to provide data to the user. It uses a series of user input to determine which data to return, and then calls on existing libraries to pull the data. The code itself uses two functions and a series of if/else functions to make everyt
+This code pulls data from Yahoo Finance and Coin Market Cap to provide data to the user. It uses a series of user input to determine which data to return, and then calls on existing libraries to pull the data. The code itself uses two functions and a series of if/else functions to make everything function. 
 
 ## Getting Started
 
@@ -33,8 +33,6 @@ Logan Cook (Lcook24@biomedscienceacademy.org)
 * 0.1
     * Initial Release
     * State it is now, includes multiple commits, but first official version
-
-
 
 
 ## Acknowledgments
