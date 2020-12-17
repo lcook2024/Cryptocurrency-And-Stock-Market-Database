@@ -1,7 +1,11 @@
 """
 Author: Logan Cook
 
-Cryptocurrency Applications 
+Cryptocurrency Databases
+
+Utilizes the CoinMarketCap API, along with imports from requests, json, and os. 
+
+The goal of the code is to provide the user an easy and effecient way to be provided will all of the data they need on their favorite cryptos. 
 
 """
 
@@ -39,3 +43,4 @@ try:
 except (ConnectionError, Timeout, TooManyRedirects) as e:
   print(e)
 
+print("\nPlease note that the console will clear when you run the program again!")
