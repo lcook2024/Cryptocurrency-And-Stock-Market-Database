@@ -65,7 +65,7 @@ def crypto():
 if __name__ == "__main__":
   os.system("clear")
 
-choice = input("What would you like data on, stocks or Cyrptocurrency? ")
+choice = input("What would you like data on, stocks or Cryptocurrency? ")
 
 #Uses the choice variable to determine which function to use
 if choice == "Stocks" or choice == "stocks" or choice == "Stock market" or choice == "stock market" or choice == "Stock Market" or choice == "Stock" or choice == "stock":
